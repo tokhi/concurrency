@@ -30,7 +30,7 @@ public class BasicClock extends TimerTask {
 	public void run() {
 		Date time = new Date();
 		Graphics g = window.getContentPane().getGraphics();
-		//g.setColor(Color.WHITE);
+		g.setColor(Color.WHITE);
 		g.drawString(clockFace, 10, 20);
 		clockFace = time.toString();
 		g.setColor(Color.BLUE);
